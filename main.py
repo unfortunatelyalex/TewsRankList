@@ -1,20 +1,13 @@
-
-
-import asyncio
 import json
 import os
-from webbrowser import get
-
 import discord
 import requests
 from discord.ext import commands
-# import .env file
 from dotenv import load_dotenv
 
 load_dotenv()
 
 intents = discord.Intents.all()
-intents.members = True
 
 
 bot = commands.Bot(command_prefix = 't$', intents=intents)
