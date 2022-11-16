@@ -159,14 +159,14 @@ async def on_ready():
 #Defines the message commands to be used in discord
 @bot.command()
 async def first(message):
-  embed = get_leaderboard()
-  await message.channel.send(embed=embed)
+    embed = get_leaderboard()
+    await message.channel.send(embed=embed)
 
 
 @bot.command()
 async def second(message):
-  embed = get_leaderboard2()
-  await message.channel.send(embed=embed)
+    embed = get_leaderboard2()
+    await message.channel.send(embed=embed)
     
 
 # async def my_background_task():
@@ -189,6 +189,3 @@ async def second(message):
 token = os.getenv('dc')
 
 bot.run(token)
-
-# py -3 main.py
-# py -3 -m pip install -U [anything]
